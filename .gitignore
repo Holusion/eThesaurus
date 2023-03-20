@@ -1,0 +1,8 @@
+
+# ruby things
+.ruby-gemset
+/.bundle/
+
+# build artifacts
+/.jekyll-cache/
+/_site/
