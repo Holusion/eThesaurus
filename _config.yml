@@ -1,13 +1,16 @@
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "ethesaurus.holusion.com"
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "eThesaurus" # the name of your site, e.g. ACME Corp.
+
+plugins:
+  - jekyll-sitemap
 
 defaults:
   - scope:
       path: ""
       type: "pages"
     values:
-      layout: default
+      layout: page
   - scope:
       path: "fr"
     values:

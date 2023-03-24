@@ -8,3 +8,6 @@ group :core do
   gem 'wdm', ">=0.1.0" if Gem.win_platform?
 end
 
+group :plugins do
+  gem 'jekyll-sitemap', "~>1.4.0"
+end
