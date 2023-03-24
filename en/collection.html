@@ -1,0 +1,37 @@
+---
+title: "Collection"
+
+lang: fr
+---
+
+<main class="pt-5 main-grid">
+    <section class="section section-center">
+        <h2 class="text-white my-5" style="font-size: 3rem">Collection</h2>
+    </section>
+    <section class="section section-center">
+        <div class="content">
+            <p>
+                browse through our collection
+            </p>
+            <div class="row g-0">
+                {% for item in site.pages %}
+                    {%if item.layout == "item" %}
+                    <div class="dark-card col-xl-4 col-lg-4 col-sm-6 col-12 py-3 px-sm-2">
+                        <a href="{{item.url}}">
+                        {% if item.image %}
+                            <img src="{{item.image}}" alt="">
+                        {%- endif -%}                
+                        </a>
+                        <div>
+                        <h4>{{ item.title }}</h4>
+                        <p>{{ item.abstract }}</p> 
+                        </div>
+                    </div>
+                    {% endif %}
+                {% endfor %}                
+            </div>
+        </div>
+    </section>
+</main>
+
+  
