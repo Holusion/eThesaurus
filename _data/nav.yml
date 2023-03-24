@@ -1,6 +1,9 @@
-about:
-  fr: À propos
-  en: About
 collection:
   fr: Collection
   en: Collection
+doc:
+  fr: Documentation
+  en: Documentation
+about:
+  fr: À propos
+  en: About

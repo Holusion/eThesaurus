@@ -1,13 +1,36 @@
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-title: "" # the name of your site, e.g. ACME Corp.
+title: "eThesaurus" # the name of your site, e.g. ACME Corp.
 
 defaults:
   - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: default
+  - scope:
       path: "fr"
     values:
-      language: "fr"
+      lang: "fr"
   - scope:
       path: "en"
     values:
-      language: "en"
+      lang: "en"
+  
+  - scope:
+      path: "fr/items"
+    values:
+      layout: "item"
+  - scope:
+      path: "en/items"
+    values:
+      layout: "item"
+
+  - scope:
+      path: "fr/doc"
+    values:
+      layout: "doc"
+  - scope:
+      path: "en/doc"
+    values:
+      layout: "doc"
