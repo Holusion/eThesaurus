@@ -15,7 +15,7 @@
     {%- if page.image -%}
         <meta property="og:image" content="{{page.image| absolute_url}}"/>
     {% elsif page.scene %}
-    <meta property="og:image" content="https://ecorpus.holusion.com/scenes/{{page.scene}}/scene-image-thumb.jpg"/>
+        <meta property="og:image" content="https://ecorpus.holusion.com/scenes/{{page.scene}}/scene-image-thumb.jpg"/>
     {%- else -%}
       <meta property="og:image" content="{{ '/assets/img/og_header.jpg' | absolute_url}}"/>
       <meta property="og:image:width" content="1200"/>

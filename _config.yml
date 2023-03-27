@@ -4,6 +4,7 @@ title: "eThesaurus" # the name of your site, e.g. ACME Corp.
 
 plugins:
   - jekyll-sitemap
+  - jekyll-last-modified-at
 
 defaults:
   - scope:
