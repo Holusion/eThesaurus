@@ -1,31 +1,13 @@
 ---
-title: Story Edition
+title: Manuel d'édition
+description: apprenez à éditer une scène 3D en utilisant Voyager Story
 ---
+
 # Voyager Story
 
 ## Editeur de scènes pour Voyager
 
 <style>
-  h1, h3{
-    color: var(--color-primary-light)
-  }
-  .ff-button.ff-control{
-    width: 150px;
-  }
-  .ff-button.ff-control.ff-disabled{
-    color: white !important;
-  }
-  .ff-button.ff-control.ff-disabled > .ff-icon{
-    fill: white !important;
-  }
-  .ff-button.ff-control.rounded{
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-  }
-  .inline{
-    display:inline-block;
-  }
   li{
     margin: 0.2rem;
     list-style: none;
