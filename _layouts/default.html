@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang | default: 'en-US' }}">
   <head>
+
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>{{ page.title }} - {{ site.title }}</title>
@@ -8,20 +10,34 @@
     {%- if page.description -%}
       <meta name="description" content="{{ page.description | strip_html | truncatewords:155|escape }}" />
       <meta property="og:description" content="{{page.description | strip_html | truncatewords:297|escape}}"/>
-    {%- else -%}
-      <meta name="description" content="{{site.title}}" />
     {%- endif -%}
 
     {%- if page.image -%}
-        <meta name="twitter:image"  content="{{site.url}}{{page.image}}">
-        <meta property="og:image" content="{{site.url}}{{page.image}}"/>
+        <meta property="og:image" content="{{page.image| absolute_url}}"/>
+    {%- else -%}
+      <meta property="og:image" content="{{ '/assets/img/og_header.jpg' | absolute_url}}"/>
+      <meta property="og:image:width" content="1200"/>
+      <meta property="og:image:height" content="630"/>
     {%- endif -%}
+
     {%- if page.lang -%}
+      {%- if page.lang == "fr" -%}
+        {%- assign alt_lang = "en" -%}
+        {%- assign alt_url = page.url | replace_first: "/fr/", "/en/" -%}
+      {%- else -%}
+        {%- assign alt_lang = "fr" -%}
+        {%- assign alt_url = page.url | replace_first: "/en/", "/fr/" -%}
+      {%- endif -%}
+      {%- assign alt = site.pages | where:"url", alt_url | first -%}
       <meta property="og:locale" content="{{page.lang}}"/>
+      {%- if alt -%}
+        <meta rel="alternate" hreflang="{{ page.lang }}" href="{{ page.url | absolute_url }}"/>
+        <meta rel="alternate" hreflang="{{ alt_lang }}" href="{{ alt_url | absolute_url }}"/>
+      {%- endif -%}
     {%- endif -%}
 
     <link rel="stylesheet" href="https://holusion.com/css/theme.css">
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ 'assets/css/main.css' | relative_url }}">
 
     <link rel="icon" type="image/png" href="/assets/img/logo-ecorpus.png">
 
@@ -39,7 +55,8 @@
         </button>
         <div class="navbar-header me-3 p-2">
           <a href="/{{page.lang}}/" class="navbar-brand" aria-label="ecorpus logo">
-            <img src="/assets/img/logo-ecorpus.png" alt="logo e-corpus" height="32"><span class="px-2 text-light">e-Thesaurus</span> 
+            <img src="/assets/img/logo-ecorpus.png" alt="logo e-corpus" height="32">
+            <span style="font-family: CgBernhardt, sans-serif;" class="px-2 text-light">eThesaurus</span> 
           </a>
         </div>
         <div class="collapse navbar-collapse" id="navbar-collapse-1">

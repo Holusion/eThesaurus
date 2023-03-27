@@ -1,15 +1,8 @@
 {%- comment -%} 
-  output nothing when no alt page is available
+  output nothing when no alt page is available.
+  Relies on default layout assigning the "alt" variable
   Could use a plugin like on holusion.com
 {%- endcomment -%}
-{%- if page.lang == "fr" -%}
-  {%- assign alt_lang = "en" -%}
-  {%- assign alt_url = page.url | replace_first: "/fr/", "/en/" -%}
-{%- else -%}
-  {%- assign alt_lang = "fr" -%}
-  {%- assign alt_url = page.url | replace_first: "/en/", "/fr/" -%}
-{%- endif -%}
-{%- assign alt = site.pages | where:"url", alt_url | first -%}
 
 {% if  alt %}
 <li class="{{include.type}}" >
