@@ -1,6 +1,7 @@
 $backgroundColor: #103040;
 $bodyColor: #ffffff;
-$bodyFont: Open Sans,Roboto,sans-serif;
+$bodyFont: 'Open Sans',Roboto,sans-serif;
+$serifFont: 'Noto Serif', serif;
 
 body {
   background: $backgroundColor;
@@ -15,6 +16,10 @@ footer {
 
 main {
   min-height: calc(100% - 45px);
+}
+
+h1, h2, h3 {
+  font-family: $serifFont;
 }
 
 .youtube-video {
