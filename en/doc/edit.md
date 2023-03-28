@@ -1,11 +1,11 @@
 ---
-title: Manuel d'édition
-description: apprenez à éditer une scène 3D en utilisant Voyager Story
+title: Editing Manual
+description: Learn how to edit a 3D scene using Voyager Story.
 ---
 
 # Voyager Story
 
-## Editeur de scènes pour Voyager
+## Scene Editor for Voyager
 
 <style>
   li{
@@ -24,80 +24,114 @@ description: apprenez à éditer une scène 3D en utilisant Voyager Story
   }
 </style>
 
-### Editez votre scène
+### Edit your scene
 
- - {% include button.html name="pose" %} Positionner et redimensionner le modèle.
- - {% include button.html name="capture" %}  Prendre des captures d'écran et enregistrer l'état de la scène.
- - {% include button.html name="derivatives" %}  Gérer les dérivés (différents niveaux de détail).
- - {% include button.html name="annotations" %}  Créer et modifier des annotations.
- - {% include button.html name="articles" %}  Créer et éditer des articles.
- - {% include button.html name="visites" %}  Créer et modifier des visites guidées.
- - {% include button.html name="audio" %}  Ajouter et organiser des audios.
- - {% include button.html name="parametres" %}  Editer les paramètres de la scène.
 
-## Créer une scène pas à pas
+ - {% include button.html name="pose" style="width:150px" icon="move" %} Position and resize the model.
+ - {% include button.html name="capture" style="width:150px" icon="camera" %} Take screenshots and save the state of the scene.
+ - {% include button.html name="derivatives" style="width:150px" icon="hierarchy" %}  Manage derivatives (different levels of detail).
+ - {% include button.html name="annotations" style="width:150px" icon="comment" %}  Create and edit annotations.
+ - {% include button.html name="articles" style="width:150px" icon="file" %}   Create and edit articles.
+ - {% include button.html name="tours" style="width:150px" icon="globe" %}  Create and edit guided tours.
+ - {% include button.html name="audio" style="width:150px" icon="audio" %}  Add and organize audio.
+ - {% include button.html name="parameters" style="width:150px" icon="eye" %}  Edit scene settings.
 
-### Importer un modèle
+## Creating a scene step by step
 
-Importez un modèle en .glb en le glissant dans la liste de modèles à partir de vos fichiers, ou en cliquand sur le bouton "Créer une scène".
+### Import a model
 
-Cliquez ensuite sur "story" pour acceder à l'éditeur de scène Voyager.
+<p>
+  Import a .glb model by dragging it into the model list from your files or by clicking the "Create Scene" button.
+</p>
+<p>
+  Then click on "story" to access the Voyager scene editor.
+</p>
 
-### Positionner et redimensionner le modèle
+### Position and resize the model
 
-Allez dans l'onglet <span class="inline"><ff-button text="Pose" icon="move" disabled></ff-button></span> et selectionnez votre modèle pour ajuster sa position.
+<p>
+  Go to the {% include button.html name="pose" icon="move" %} tab and select your model to adjust its position.
+</p>
 
-<img src="/assets/img/doc/Voyager-edit-pose.jpg" alt="screen de l'application Voyager, positionner le modèle">
+<img src="/assets/img/doc/Voyager-edit-pose.jpg" alt="screen of the Voyager application, position the model">
 
-Vous pouvez alors le recenter dans la scène, puis ajuster sa position et sa rotation à l'aide des fenêtres de vue _top_, _left_ et _front_.
+<p>
+  You can then recenter it in the scene and adjust its position and rotation using the _top_, _left_, and _front_ view windows.
+</p>
 
-Pensez à vérifier l'unité de mesure de la scène, ainsi que de l'object. Vous pouvez vous servir de l'outil _mesure_ dans les <span class="inline"><ff-button class="rounded" icon="tools" disabled></ff-button></span> paramètres pour vérifier la taille du modèle.
+<p>
+  Be sure to check the unit of measurement for the scene and object. You can use the measure tool in the {% include button.html icon="tools" class="voyager-btn-rounded" %} settings to check the size of the model.
+</p>
 
-<img src="/assets/img/doc/Voyager-edit-mesure.jpg" alt="screen de l'application Voyager, mesurer le modèle">
+<img src="/assets/img/doc/Voyager-edit-mesure.jpg" alt="screen of the Voyager application, measure the model">
 
-### Prendre des captures d'écran et enregistrer l'état de la scène
+### Take screenshots and save the state of the scene
 
-Une fois le modèle positionné comme voulu, allez dans l'onglet <span class="inline"><ff-button text="Capture" icon="camera" disabled></ff-button></span> pour enregistrer son positionnement et générer une image de miniature. 
+<p>
+  Once the model is positioned as desired, go to the {% include button.html name="capture" icon="camera" %} tab to save its position and generate a thumbnail image.
+</p>
 
-<img src="/assets/img/doc/Voyager-edit-capture.jpg" alt="screen de l'application Voyager, capturer la scène">
+<img src="/assets/img/doc/Voyager-edit-capture.jpg" alt="screen of the Voyager application, capture the scene">
 
-Il est necessaire de capturer la scène pour enregistrer son état (position de l'objet, miniature...).
+<p>
+  It is necessary to capture the scene to save its state (object position, thumbnail, etc.).
+</p>
 
-### Créer et modifier des annotations
+### Create and edit annotations
 
-Dans l'onglet <span class="inline"><ff-button text="Annotations" icon="comment" disabled></ff-button></span>, selectionnez votre modèle puis cliquer sur le bouton _+ create_ pour créer votre nouvelle annotation.
+<p>
+  In the {% include button.html name="annotations" icon="comment" %} tab, select your model and click the _+ create_ button to create your new annotation.
+</p>
+<p>
+  Then click on the element to annotate on your model.
+</p>
 
-Cliquez ensuite sur l'élément à annoter sur votre modèle.
+<img src="/assets/img/doc/Voyager-edit-annotations.jpg" alt="screen of the Voyager application, add an annotation">
 
-<img src="/assets/img/doc/Voyager-edit-annotations.jpg" alt="screen de l'application Voyager, ajouter une annotation">
+<p>
+  Note that the annotation will be in English by default. Don't forget to change the language in the language settings to the language of your application.
+</p>
 
-Attention, l'annotation sera par défaut en anglais. N'oubliez pas de changer la langue dans _language_ pour la mettre dans la langue de votre application.
+### Create and edit articles
 
-### Créer et éditer des articles
+<p>
+  In the {% include button.html name="articles" icon="file" %} tab, select your model and click the + create button to create your new article.
+</p>
 
-Dans l'onglet <span class="inline"><ff-button text="Articles" icon="file" disabled></ff-button></span>, selectionnez votre modèle puis cliquez sur le bouton _+ create_ pour créer votre nouvel article.
+<img src="/assets/img/doc/Voyager-edit-article.jpg" alt="screen of the Voyager application, add an article">
 
-<img src="/assets/img/doc/Voyager-edit-article.jpg" alt="screen de l'application Voyager, ajouter un article">
+<p>
+  As with annotations, make sure the selected language is that of your application.
+</p>
+<p>
+  You can then define a title, excerpt, and use the editor to write your article.
+</p>
+<p>
+  You can edit your article at any time by clicking on its name in the list.
+</p>
 
-Comme pour les annotations, vérifiez que la langue sélectionnée soit bien celle de votre application.
+### Create and edit guided tours
 
-Vous pouvez alors lui définir un titre, un extrait, puis utiliser l'éditeur pour rédiger votre article.
+<p>
+  In the {% include button.html name="tours" icon="globe" %} tab, click the + button to create a new guided tour.
+</p>
 
-Vous pouvez revenir à tout moment éditer votre article en cliquand sur son nom dans la liste.
+<p>
+  In the tour editor, you can then create each step of your tour. Make sure the selected language is that of your application.
+</p>
 
-### Créer et modifier des visites guidées
+<p>
+  Add a title, then adjust the position of your model, zoom in on key elements, display or hide an article... then click _update_ to save it and move on to the next step.
+</p>
 
-Dans l'onglet <span class="inline"><ff-button text="Visites" icon="globe" disabled></ff-button></span>, cliquez sur le bouton + pour créer une nouvelle visite guidée.
+<img src="/assets/img/doc/Voyager-edit-visite.jpg" alt="screen of the Voyager application, create a guided tour">
 
-Dans l'éditeur de tour, vous pouvez alors créer chaque étape de votre visite.
-Vérifiez bien que la langue sélectionnée soit bien celle de votre application.
+### Save your scene
 
-Ajoutez un titre puis modifiez la position de votre modèle, zoomez sur des éléments clefs, affichez ou non un article... puis cliquez sur _update_ afin de l'enregistrer et passer à l'étape suivante.
+<p>
+  All that's left is to save your work using the {% include button.html name="Save" icon="save" %} button.
+</p>
 
-<img src="/assets/img/doc/Voyager-edit-visite.jpg" alt="screen de l'application Voyager, créer une visite guidée">
-
-### Sauvegarder votre scène
-
-Il ne reste plus qu'à sauvegarder votre travail grâce au bouton <span class="inline"><ff-button text="Sauvegarder" icon="save" disabled></ff-button></span>.
-
-Vous pouvez aussi sauvegarder votre scène en local en la téléchargeant avec le bouton <span class="inline"><ff-button text="Télécharger" icon="download" disabled></ff-button></span>.
+<p>
+  You can also save your scene locally by downloading it with the {% include button.html name="Download" icon="download" %} button.
+</p>

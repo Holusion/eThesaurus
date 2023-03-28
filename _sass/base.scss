@@ -57,3 +57,24 @@ h1, h2, h3 {
     transform: scale(1.1);
   }
 }
+
+.voyager-btn{
+  display: inline-block;
+  background-color: #272727;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  &.icon-only{
+    width: auto;
+  } 
+  &.voyager-btn-rounded{
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+  }   
+  svg{
+    height: 1.2rem;
+    fill: white;
+  }
+
+}
