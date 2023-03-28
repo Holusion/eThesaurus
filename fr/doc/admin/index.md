@@ -1,15 +1,15 @@
 ---
-title: Manuel d'administration eCorpus
-description: faites le tour des fonctionnalités d'administration d'eCorpus
+title:  eCorpus Administration Manual
+description: Take a tour of eCorpus administration features.
 ---
 
-# Administration d'une instance eCorpus
+# Administration of an eCorpus instance
 
-### Accéder à l'interface d'administration
+### Accessing the administration interface
 
-Connecté en tant qu'administrateur, un onglet <b>administration</b> est disponible dans la barre de navigation.
+When connected as an administrator, an <b>administration</b> tab is available in the navigation bar.
 
-Si l'onglet n'apparait pas, vous ne disposez peut-être pas des droits nécessaires. Veuillez contacter votre administrateur.
+If the tab does not appear, you may not have the necessary permissions. Please contact your administrator.
 
 
 
