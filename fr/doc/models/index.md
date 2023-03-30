@@ -14,15 +14,6 @@ Des modèles au format [USD](https://openusd.org/release/intro.html) (`.usdz`) p
 ### Niveaux de détail
 
 
-        if (maxTextureSize < 2048) {
-            this.ins.quality.setValue(EDerivativeQuality.Low);
-        }
-        else if (maxTextureSize < 4096) {
-            this.ins.quality.setValue(EDerivativeQuality.Medium);
-        }
-        else {
-            this.ins.quality.setValue(EDerivativeQuality.High);
-        }
 
 L'application peut enregistrer plusieurs niveaux de détail pour un objet et tenter d'en afficher le plus pertinent. Les niveaux supportés sont :
 
