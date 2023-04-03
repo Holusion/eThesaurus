@@ -1,5 +1,5 @@
 ---
-layout: doc
+layout: page
 title: Manuel d'édition
 description: apprenez à éditer une scène 3D en utilisant Voyager Story
 scripts:
@@ -30,12 +30,13 @@ scripts:
     <div class="sticky-content">
       <div class="slides">
         <img src="/assets/img/doc/eCorpus-import.jpg" data-slides="0" alt="screen de eCorpus, Système de gestion de scènes 3D, avec surbrillance du bouton d'import">
-        <img src="/assets/img/doc/Voyager-edit-pose.jpg" data-slides="1" alt="screen de l'application Voyager, positionner le modèle">
-        <img src="/assets/img/doc/Voyager-edit-capture.jpg" data-slides="2" alt="screen de l'application Voyager, capturer la scène">
-        <img src="/assets/img/doc/Voyager-edit-annotations.jpg" data-slides="3" alt="screen de l'application Voyager, ajouter une annotation">
-        <img src="/assets/img/doc/Voyager-edit-article.jpg" data-slides="4" alt="screen de l'application Voyager, ajouter un article">
-        <img src="/assets/img/doc/Voyager-edit-visite.jpg" data-slides="5" alt="screen de l'application Voyager, créer une visite guidée">
-        <img src="/assets/img/doc/Voyager-edit-save.jpg" data-slides="6" alt="screen de l'application Voyager, créer une visite guidée">
+        <img src="/assets/img/doc/Voyager-edit-rename.jpg" data-slides="1" alt="screen de l'application Voyager, renommer la scène">
+        <img src="/assets/img/doc/Voyager-edit-pose.jpg" data-slides="2" alt="screen de l'application Voyager, positionner le modèle">
+        <img src="/assets/img/doc/Voyager-edit-capture.jpg" data-slides="3" alt="screen de l'application Voyager, capturer la scène">
+        <img src="/assets/img/doc/Voyager-edit-annotations.jpg" data-slides="4" alt="screen de l'application Voyager, ajouter une annotation">
+        <img src="/assets/img/doc/Voyager-edit-article.jpg" data-slides="5" alt="screen de l'application Voyager, ajouter un article">
+        <img src="/assets/img/doc/Voyager-edit-visite.jpg" data-slides="6" alt="screen de l'application Voyager, créer une visite guidée">
+        <img src="/assets/img/doc/Voyager-edit-save.jpg" data-slides="7" alt="screen de l'application Voyager, créer une visite guidée">
       </div>
     </div>
   </div>
@@ -49,8 +50,21 @@ scripts:
       <p>
         Cliquez ensuite sur "story ➝" pour acceder à l'éditeur de scène Voyager.
       </p>
+      <p>
+        Si vous voulez tester l'éditeur sans créer de nouvelle scène dans eCorpus, vous pouvez utiliser le mode "standalone" de l'éditeur.
+      </p>
+      <p>
+        Dans ce cas là, importez votre modèle directement dans l'éditeur.
+      </p>
+      <img class="img-fluid" src="/assets/img/doc/Voyager-edit-standalone_import.jpg" alt="screen de l'application Voyager en mode standalone">
     </div>
-    <!--slide 1 - Positionner-->
+    <!--slide 1 - Renommer-->
+    <div>
+      <h3>Renommer la scène</h3>
+      <p>Pour renommer votre scène, allez dans l'onglet "Collection" et changez le titre.</p>
+      <p>En mode standalone, le nom par défault est "Missing Title".</p>
+    </div>
+    <!--slide 2 - Positionner-->
     <div id="pose" class="pt-5">
       <h3>Positionner et redimensionner le modèle</h3>
       <p> 
@@ -64,7 +78,7 @@ scripts:
       </p>
       <img class="img-fluid" src="/assets/img/doc/Voyager-edit-mesure.jpg" alt="screen de l'application Voyager, mesurer le modèle">
     </div>
-    <!--slide 2 - Capturer-->
+    <!--slide 3 - Capturer-->
     <div id="capture" class="pt-5">
       <h3>Prendre des captures d'écran et enregistrer l'état de la scène</h3>
       <p>
@@ -74,7 +88,7 @@ scripts:
         Il est necessaire de capturer la scène pour enregistrer son état (position de l'objet, miniature...).
       </p>      
     </div>
-    <!--slide 3 - Annotations-->
+    <!--slide 4 - Annotations-->
     <div id="comment" class="pt-5">
       <h3>Créer et modifier des annotations</h3>
         <p>
@@ -88,7 +102,7 @@ scripts:
         </p>
         <img class="img-fluid" src="/assets/img/doc/Voyager-edit-annotations-language.jpg" alt="screen de l'application Voyager, changer la langue de l'annotation">
     </div>
-    <!--slide 4 - Articles-->
+    <!--slide 5 - Articles-->
     <div id="article" class="pt-5">
       <h3>Créer et éditer des articles</h3>
       <p>
@@ -104,7 +118,7 @@ scripts:
         Vous pouvez revenir à tout moment éditer votre article en cliquand sur son nom dans la liste.
       </p>      
     </div>
-    <!--slide 5 - Visites guidées-->
+    <!--slide 6 - Visites guidées-->
     <div id="tours" class="pt-5">
       
       <h3>Créer et modifier des visites guidées</h3>
@@ -122,7 +136,7 @@ scripts:
       <p class="text-center mt-4"><button class="btn btn-primary">Guide complet pour créer une visite guidée</button></p>
       -->
     </div>
-    <!--slide 6 - Sauvegarder-->
+    <!--slide 7 - Sauvegarder-->
     <div>
     <p>
       Il ne reste plus qu'à sauvegarder votre travail grâce au bouton {% include button.html name="Sauvegarder" icon="save" %}.
