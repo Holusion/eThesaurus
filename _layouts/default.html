@@ -101,6 +101,8 @@
       </nav>      
     </footer>
 
-
+    {%- for script in page.scripts -%}
+      <script src="{{script}}" async ></script>
+    {%- endfor -%}
   </body>
 </html>

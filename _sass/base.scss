@@ -76,5 +76,18 @@ h1, h2, h3 {
     height: 1.2rem;
     fill: white;
   }
+}
 
+.doc-summary{
+  li{
+    margin: 0.2rem;
+    list-style: none;
+  }
+  li a{
+    color: var(--color-light);
+    text-decoration: none;
+  }
+  li a:hover{
+    color: white;
+  }
 }
