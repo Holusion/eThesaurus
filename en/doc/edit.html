@@ -12,20 +12,37 @@ scripts:
     <h2>Scene Editor for Voyager</h2>
     <h3>Edit your scene</h3>
     <ul>
-      <li><a href="#pose">{% include button.html name="pose" style="width:150px" icon="move" %} Position and resize the model..</a></li>
-      <li><a href="#capture">{% include button.html name="capture" style="width:150px" icon="camera" %} Take screenshots and save the state of the scene.</a></li>
+      <li>{% include button.html name="pose" style="width:150px" icon="move" %} Position and resize the model.</li>
+      <li>{% include button.html name="capture" style="width:150px" icon="camera" %} Take screenshots and save the state of the scene.</li>
       <li>{% include button.html name="derivatives" style="width:150px" icon="hierarchy" %} Manage derivatives (different levels of detail).</li>
-      <li><a href="#comment">{% include button.html name="annotations" style="width:150px" icon="comment" %} Create and edit annotations.</a></li>
-      <li><a href="#article">{% include button.html name="articles" style="width:150px" icon="file" %} Create and edit articles.</a></li>
-      <li><a href="#tours">{% include button.html name="tours" style="width:150px" icon="globe" %}  Create and edit guided tours.</a></li>
+      <li>{% include button.html name="annotations" style="width:150px" icon="comment" %} Create and edit annotations.</li>
+      <li>{% include button.html name="articles" style="width:150px" icon="file" %} Create and edit articles.</li>
+      <li>{% include button.html name="tours" style="width:150px" icon="globe" %}  Create and edit guided tours.</li>
       <li>{% include button.html name="audio" style="width:150px" icon="audio" %}  Add and organize audio.</li>
       <li>{% include button.html name="parameters" style="width:150px" icon="eye" %}  Edit scene settings.</li>
     </ul>
   </div>
 </section>
 
-<section class="section left">
+
+<section class="section section-center">
   <h2>Creating a scene step by step</h2>
+</section>
+
+<div class="slide-navbar content">
+  <ul>
+    <li><a data-id="import" href="#import">Import</a></li>
+    <li><a data-id="rename" href="#rename">Rename</a></li>
+    <li><a data-id="pose" href="#pose">Pose</a></li>
+    <li><a data-id="capture" href="#capture">Capture</a></li>
+    <li><a data-id="comment" href="#comment">Annotations</a></li>
+    <li><a data-id="article" href="#article">Articles</a></li>
+    <li><a data-id="tours" href="#tours">Tours</a></li>
+    <li><a data-id="save" href="#save">Save</a></li>
+  </ul>
+</div>
+
+<section class="section left">
   <div class="fixed-background mb-0">
     <div class="sticky-content">
       <div class="slides">
@@ -42,7 +59,7 @@ scripts:
   </div>
   <div class="slide content">
     <!--slide 0 - Import-->
-    <div>
+    <div id="import">
       <h3>Import a model</h3>
       <p>
         Import a .glb model by dragging it into the model list from your files or by clicking the "Upload a scene" button.
@@ -59,7 +76,7 @@ scripts:
       <img class="img-fluid" src="/assets/img/doc/Voyager-edit-standalone_import.jpg" alt="screen of Voyager application in standalone mode">
     </div>
     <!--slide 1 - Reame-->
-    <div>
+    <div id="rename">
       <h3>Rename the scene</h3>
       <p>
         To rename your scene, go to the "Collection" tab and change the title.
@@ -69,7 +86,7 @@ scripts:
       </p>
     </div>
     <!--slide 2 - Pose-->
-    <div id="pose" class="pt-5">
+    <div id="pose">
       <h3>Position and resize the model</h3>
       <p> 
         Go to the {% include button.html name="pose" icon="move" %} tab and select your model to adjust its position.
@@ -83,7 +100,7 @@ scripts:
       <img class="img-fluid" src="/assets/img/doc/Voyager-edit-mesure.jpg" alt="screen of Voyager application, measure the model">
     </div>
     <!--slide 3 - Capture-->
-    <div id="capture" class="pt-5">
+    <div id="capture">
       <h3>Take screenshots and save the state of the scene</h3>
       <p>
         Once the model is positioned as desired, go to the {% include button.html name="capture" icon="camera" %} tab to save its position and generate a thumbnail image.
@@ -93,7 +110,7 @@ scripts:
       </p>      
     </div>
     <!--slide 4 - Annotations-->
-    <div id="comment" class="pt-5">
+    <div id="comment">
       <h3>Créer et modifier des annotations</h3>
         <p>
           Dans l'onglet {% include button.html name="annotations" icon="comment" %}, selectionnez votre modèle puis cliquer sur le bouton {% include button.html name="create" icon="plus" %} pour créer votre nouvelle annotation.
@@ -107,7 +124,7 @@ scripts:
         <img class="img-fluid" src="/assets/img/doc/Voyager-edit-annotations-language.jpg" alt="screen de l'application Voyager, changer la langue de l'annotation">
     </div>
     <!--slide 5 - Articles-->
-    <div id="article" class="pt-5">
+    <div id="article">
       <h3>Create and edit articles</h3>
       <p>
         In the {% include button.html name="articles" icon="file" %} tab, select your model and click the {% include button.html name="create" icon="plus" %} button to create your new article.
@@ -123,7 +140,7 @@ scripts:
       </p>      
     </div>
     <!--slide 6 - Tours-->
-    <div id="tours" class="pt-5">
+    <div id="tours">
       
       <h3>Create and edit guided tours</h3>
       <p>
@@ -140,7 +157,7 @@ scripts:
       -->
     </div>
     <!--slide 7 - Save-->
-    <div>
+    <div id="save">
     <p>
       All that's left is to save your work using the {% include button.html name="Save" icon="save" %} button.
     </p>

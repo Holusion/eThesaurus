@@ -12,20 +12,36 @@ scripts:
     <h2>Editeur de scènes pour Voyager</h2>
     <h3>Editez votre scène</h3>
     <ul>
-      <li><a href="#pose">{% include button.html name="pose" style="width:150px" icon="move" %} Positionner et redimensionner le modèle.</a></li>
-      <li><a href="#capture">{% include button.html name="capture" style="width:150px" icon="camera" %} Prendre des captures d'écran et enregistrer l'état de la scène.</a></li>
+      <li>{% include button.html name="pose" style="width:150px" icon="move" %} Positionner et redimensionner le modèle.</li>
+      <li>{% include button.html name="capture" style="width:150px" icon="camera" %} Prendre des captures d'écran et enregistrer l'état de la scène.</li>
       <li>{% include button.html name="derivatives" style="width:150px" icon="hierarchy" %} Gérer les dérivés (différents niveaux de détail).</li>
-      <li><a href="#comment">{% include button.html name="annotations" style="width:150px" icon="comment" %} Créer et modifier des annotations.</a></li>
-      <li><a href="#article">{% include button.html name="articles" style="width:150px" icon="file" %} Créer et éditer des articles.</a></li>
-      <li><a href="#tours">{% include button.html name="visites" style="width:150px" icon="globe" %}  Créer et modifier des visites guidées.</a></li>
+      <li>{% include button.html name="annotations" style="width:150px" icon="comment" %} Créer et modifier des annotations.</li>
+      <li>{% include button.html name="articles" style="width:150px" icon="file" %} Créer et éditer des articles.</li>
+      <li>{% include button.html name="visites" style="width:150px" icon="globe" %}  Créer et modifier des visites guidées.</li>
       <li>{% include button.html name="audio" style="width:150px" icon="audio" %}  Ajouter et organiser des audios.</li>
       <li>{% include button.html name="parametres" style="width:150px" icon="eye" %}  Editer les paramètres de la scène.</li>
     </ul>
   </div>
 </section>
 
-<section class="section left">
+<section class="section section-center">
   <h2>Créer une scène pas à pas</h2>
+</section>
+
+<div class="slide-navbar content">
+  <ul>
+    <li><a data-id="import" href="#import">Importer</a></li>
+    <li><a data-id="rename" href="#rename">Renommer</a></li>
+    <li><a data-id="pose" href="#pose">Positionner</a></li>
+    <li><a data-id="capture" href="#capture">Capture</a></li>
+    <li><a data-id="comment" href="#comment">Annotations</a></li>
+    <li><a data-id="article" href="#article">Articles</a></li>
+    <li><a data-id="tours" href="#tours">Visites</a></li>
+    <li><a data-id="save" href="#save">Sauvegarder</a></li>
+  </ul>
+</div>
+
+<section class="section left">
   <div class="fixed-background mb-0">
     <div class="sticky-content">
       <div class="slides">

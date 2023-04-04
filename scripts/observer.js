@@ -9,7 +9,8 @@ window.addEventListener("load", function(){
         "picture>img",
         "div",
       ].map(s=> ".sticky-content .slides > "+s).join(", "));
-  
+      const nav = document.querySelectorAll(".slide-navbar a");
+
       if(!contents.length) console.log("No slide-content on this page. Consider not including observer.js");
       if(!slides.length) console.log("No slides on this page. Consider not including observer.js");
     
@@ -34,6 +35,15 @@ window.addEventListener("load", function(){
       let o = new IntersectionObserver((entries)=>{
         for (let entry of entries){
           if(!entry.isIntersecting) continue;
+
+          for(let link of nav){
+            if (entry.target.getAttribute("id") == link.getAttribute("data-id")){
+              link.classList.add("active")
+            }else{
+              link.classList.remove("active")
+            }            
+          }
+
           const slideIndex = contents.indexOf(entry.target);
           for (let idx = 0; idx < slides.length; idx++){
             const img = slides[idx];
