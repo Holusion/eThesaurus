@@ -6,11 +6,31 @@ scripts:
   - /scripts/observer.js
 ---
 
-<section class="section section-center ">
-  <div class="content doc-summary">
-    <h1>Voyager Story</h1>
+<div class="section section-center">
+  <h2 class="text-white my-5" style="font-size: 3rem">Voyager Story</h2>
+</div>
+
+<section class="section">
+  <div class="media">
+    <img class="cover img-fluid" style="object-position: 70% 0;" src="/assets/img/focus_stbertin_2.png" 
+      alt="Gros plan sur le Pied de croix de l'abbaye de Saint-Bertin."
+    >
+  </div>
+  <div class="content">
     <h2>Editeur de scènes pour Voyager</h2>
-    <h3>Editez votre scène</h3>
+    <p>
+      L'édition de contenu repose sur l'éditeur <a href="https://smithsonian.github.io/dpo-voyager/story/overview/">Voyager Story</a>
+      développé par le Smithsonian Institute.
+    </p>    
+  </div>
+</section>
+
+<section class="section section-white">
+  <h2>Editez votre scène</h2>
+</section>
+
+<section class="section section-center">
+  <div class="content doc-summary">
     <ul>
       <li>{% include button.html name="pose" style="width:150px" icon="move" %} Positionner et redimensionner le modèle.</li>
       <li>{% include button.html name="capture" style="width:150px" icon="camera" %} Prendre des captures d'écran et enregistrer l'état de la scène.</li>
@@ -21,7 +41,7 @@ scripts:
       <li>{% include button.html name="audio" style="width:150px" icon="audio" %}  Ajouter et organiser des audios.</li>
       <li>{% include button.html name="parametres" style="width:150px" icon="eye" %}  Editer les paramètres de la scène.</li>
     </ul>
-  </div>
+  </div> 
 </section>
 
 <section class="section section-center">
@@ -58,7 +78,7 @@ scripts:
   </div>
   <div class="slide content">
     <!--slide 0 - Importer-->
-    <div>
+    <div id="import">
       <h3>Importer un modèle</h3>
       <p>
         Importez un modèle en .glb en le glissant dans la liste de modèles à partir de vos fichiers, ou en cliquand sur le bouton "Créer une scène".
@@ -75,7 +95,7 @@ scripts:
       <img class="img-fluid" src="/assets/img/doc/Voyager-edit-standalone_import.jpg" alt="screen de l'application Voyager en mode standalone">
     </div>
     <!--slide 1 - Renommer-->
-    <div>
+    <div id="rename">
       <h3>Renommer la scène</h3>
       <p>Pour renommer votre scène, allez dans l'onglet "Collection" et changez le titre.</p>
       <p>En mode standalone, le nom par défault est "Missing Title".</p>
@@ -153,13 +173,13 @@ scripts:
       -->
     </div>
     <!--slide 7 - Sauvegarder-->
-    <div>
-    <p>
-      Il ne reste plus qu'à sauvegarder votre travail grâce au bouton {% include button.html name="Sauvegarder" icon="save" %}.
-    </p>
-    <p>
-      Vous pouvez aussi sauvegarder votre scène en local en la téléchargeant avec le bouton {% include button.html name="Télécharger" icon="download" %} .
-    </p>      
+    <div id="save">
+      <p>
+        Il ne reste plus qu'à sauvegarder votre travail grâce au bouton {% include button.html name="Sauvegarder" icon="save" %}.
+      </p>
+      <p>
+        Vous pouvez aussi sauvegarder votre scène en local en la téléchargeant avec le bouton {% include button.html name="Télécharger" icon="download" %} .
+      </p>      
     </div>
   </div>
 </section>
