@@ -13,6 +13,7 @@ window.addEventListener("load", function(){
 
       if(!contents.length) console.log("No slide-content on this page. Consider not including observer.js");
       if(!slides.length) console.log("No slides on this page. Consider not including observer.js");
+      if(window.screen.width < 1200) return;
     
       const allSlides = contents.map((_, i)=>i);
       //Read DOMNodes only once to optimize repaints
@@ -31,9 +32,13 @@ window.addEventListener("load", function(){
         }
       });
       let thresholdValue = window.matchMedia("(max-width: 1200px)").matches ? 0.1 : 0.5;
-    
+      
+      
+
       let o = new IntersectionObserver((entries)=>{
+
         for (let entry of entries){
+
           if(!entry.isIntersecting) continue;
 
           for(let link of nav){

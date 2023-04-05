@@ -11,11 +11,7 @@ scripts:
 </div>
 
 <section class="section">
-  <div class="media">
-    <img class="cover img-fluid" style="object-position: 70% 0;" src="/assets/img/focus_stbertin_2.png" 
-      alt="Gros plan sur le Pied de croix de l'abbaye de Saint-Bertin."
-    >
-  </div>
+  <img class="cover img-fluid" style="object-position: 70% 0;" src="/assets/img/focus_stbertin_2.png" alt="Gros plan sur le Pied de croix de l'abbaye de Saint-Bertin.">
   <div class="content">
     <h2>Scene Editor for Voyager</h2>
     <p>
@@ -25,11 +21,11 @@ scripts:
 </section>
 
 <section class="section section-white">
-  <h2>Editez votre scène</h2>
+  <h2>Edit the scene</h2>
 </section>
 
-<section class="section section-center ">
-  <div class="content doc-summary">
+<section class="section section-center">
+  <div class="content doc-summary mb-0 pb-0">
     <ul>
       <li>{% include button.html name="pose" style="width:150px" icon="move" %} Position and resize the model.</li>
       <li>{% include button.html name="capture" style="width:150px" icon="camera" %} Take screenshots and save the state of the scene.</li>
@@ -39,6 +35,15 @@ scripts:
       <li>{% include button.html name="tours" style="width:150px" icon="globe" %}  Create and edit guided tours.</li>
       <li>{% include button.html name="audio" style="width:150px" icon="audio" %}  Add and organize audio.</li>
       <li>{% include button.html name="parameters" style="width:150px" icon="eye" %}  Edit scene settings.</li>
+    </ul>
+    <h3>Explore the scene</h3>
+    <ul>
+      <li>{% include button.html class="voyager-btn-rounded" icon="globe" %} Display tours.</li>
+      <li>{% include button.html class="voyager-btn-rounded" icon="file" %} Display articles.</li>
+      <li>{% include button.html class="voyager-btn-rounded" icon="comment" %} Display annotations.</li>
+      <li>{% include button.html class="voyager-btn-rounded" icon="share" %} Share the scene.</li>
+      <li>{% include button.html class="voyager-btn-rounded" icon="expand" %} Fullscreen mode.</li>
+      <li>{% include button.html class="voyager-btn-rounded" icon="tools" %} Tools and settings.</li>
     </ul>
   </div>
 </section>
@@ -61,7 +66,7 @@ scripts:
 </div>
 
 <section class="section left">
-  <div class="fixed-background mb-0">
+  <div class="fixed-background mb-0 d-none d-xl-block">
     <div class="sticky-content">
       <div class="slides">
         <img src="/assets/img/doc/eCorpus-import.jpg" data-slides="0" alt="screen of eCorpus, 3D scene manager">
@@ -82,6 +87,7 @@ scripts:
       <p>
         Import a .glb model by dragging it into the model list from your files or by clicking the "Upload a scene" button.
       </p>
+      <img class="mb-4 img-fluid d-block d-xl-none" src="/assets/img/doc/eCorpus-import.jpg" alt="screen of eCorpus, 3D scene manager">
       <p>
         Then click on "story ➝" to access the Voyager scene editor.
       </p>
@@ -99,6 +105,7 @@ scripts:
       <p>
         To rename your scene, go to the "Collection" tab and change the title.
       </p>
+      <img class="mb-4 img-fluid d-block d-xl-none" src="/assets/img/doc/Voyager-edit-rename.jpg" alt="screen of Voyager application, rename the scene">
       <p>
         In standalone mode, the default name is "Missing Title".
       </p>
@@ -109,6 +116,7 @@ scripts:
       <p> 
         Go to the {% include button.html name="pose" icon="move" %} tab and select your model to adjust its position.
       </p>
+      <img class="mb-4 img-fluid d-block d-xl-none" src="/assets/img/doc/Voyager-edit-pose.jpg" alt="screen of Voyager application, position the model">
       <p>
         You can then recenter it in the scene and adjust its position and rotation using the<span class="bg-dark">Top</span>, <span class="bg-dark">Left</span> and <span class="bg-dark">Front</span> view windows.
       </p>  
@@ -123,23 +131,25 @@ scripts:
       <p>
         Once the model is positioned as desired, go to the {% include button.html name="capture" icon="camera" %} tab to save its position and generate a thumbnail image.
       </p>
+      <img class="mb-4 img-fluid d-block d-xl-none" src="/assets/img/doc/Voyager-edit-capture.jpg" alt="screen of Voyager application, capture the scene">
       <p>
         It is necessary to capture the scene to save its state (object position, thumbnail, etc.).
       </p>      
     </div>
     <!--slide 4 - Annotations-->
     <div id="comment">
-      <h3>Créer et modifier des annotations</h3>
-        <p>
-          Dans l'onglet {% include button.html name="annotations" icon="comment" %}, selectionnez votre modèle puis cliquer sur le bouton {% include button.html name="create" icon="plus" %} pour créer votre nouvelle annotation.
-        </p>
-        <p>
-          Cliquez ensuite sur l'élément à annoter sur votre modèle.
-        </p>
-        <p>
-          Note that the annotation will be in English by default. Don't forget to change the language in the language settings to the language of your application.
-        </p>
-        <img class="img-fluid" src="/assets/img/doc/Voyager-edit-annotations-language.jpg" alt="screen de l'application Voyager, changer la langue de l'annotation">
+      <h3>Create and edit annotations</h3>
+      <p>
+        In the {% include button.html name="annotations" icon="comment" %} tab, select your model then click on the {% include button.html name="create" icon="plus" %} button to create your new annotation.
+      </p>
+      <img class="mb-4 img-fluid d-block d-xl-none" src="/assets/img/doc/Voyager-edit-annotations.jpg" alt="screen of Voyager application, add an annotation">
+      <p>
+        Then click on the element to annotate on your model.
+      </p>
+      <p>
+        Note that the annotation will be in English by default. Don't forget to change the language in the language settings to the language of your application.
+      </p>
+      <img class="img-fluid" src="/assets/img/doc/Voyager-edit-annotations-language.jpg" alt="screen de l'application Voyager, changer la langue de l'annotation">
     </div>
     <!--slide 5 - Articles-->
     <div id="article">
@@ -147,6 +157,7 @@ scripts:
       <p>
         In the {% include button.html name="articles" icon="file" %} tab, select your model and click the {% include button.html name="create" icon="plus" %} button to create your new article.
       </p>
+      <img class="mb-4 img-fluid d-block d-xl-none" src="/assets/img/doc/Voyager-edit-article.jpg" alt="screen of Voyager application, add an article">
       <p>
         As with annotations, make sure the selected language is that of your application.
       </p>
@@ -159,13 +170,14 @@ scripts:
     </div>
     <!--slide 6 - Tours-->
     <div id="tours">
-      
       <h3>Create and edit guided tours</h3>
       <p>
         In the {% include button.html name="tours" icon="globe" %} tab, click the {% include button.html icon="plus" %} button to create a new guided tour.
       </p>
+      <img class="mb-4 img-fluid d-block d-xl-none" src="/assets/img/doc/Voyager-edit-visite.jpg" alt="screen of Voyager application, create a guided tour">
       <p>
-        In the tour editor, you can then create each step of your tour. Make sure the selected language is that of your application.
+        In the tour editor, you can then create each step of your tour. 
+        Make sure the selected language is that of your application.
       </p>
       <p>
         Add a title, then adjust the position of your model, zoom in on key elements, display or hide an article... then click {% include button.html name="update" icon="camera" %} to save it and move on to the next step.
@@ -176,12 +188,14 @@ scripts:
     </div>
     <!--slide 7 - Save-->
     <div id="save">
-    <p>
-      All that's left is to save your work using the {% include button.html name="Save" icon="save" %} button.
-    </p>
-    <p>
-      You can also save your scene locally by downloading it with the {% include button.html name="Download" icon="download" %} button.
-    </p>      
+      <h3>Save your work</h3>
+      <p>
+        All that's left is to save your work using the {% include button.html name="Save" icon="save" %} button.
+      </p>
+      <p>
+        You can also save your scene locally by downloading it with the {% include button.html name="Download" icon="download" %} button.
+      </p>
+      <img class="mb-4 img-fluid d-block d-xl-none" src="/assets/img/doc/Voyager-edit-save.jpg" alt="screen of Voyager application, save the scene">   
     </div>
   </div>
 </section>

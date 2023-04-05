@@ -128,5 +128,8 @@ h1, h2, h3 {
 .slide.content{
   >div{
     padding-top: 120px !important;
+    @media (max-width:1200px){
+      margin: 0 !important;
+    }    
   }
 }
