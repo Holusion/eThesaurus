@@ -27,7 +27,7 @@ description: >
             Le projet porte sur la numérisation de six œuvres d'orfèvrerie médiévales :
         </p>
         <p>
-            <b>Trois œuvres conservées au musée Sandelin à Saint-Omer :</b>
+            <b>Trois œuvres conservées au <a href="https://www.musees-saint-omer.fr/">musée Sandelin à Saint-Omer</a> :</b>
             <ul>
                 <li><a href="items/pied-de-croix.html">le Pied de croix de l’abbaye Saint-Bertin</a> (v. 1170-1180)</li>
                 <li><a href="items/croix-clairmarais.html">la croix-reliquaire de la Vraie Croix</a>, provenant de l’abbaye de Clairmarais (v. 1210-1220)</li>
@@ -35,7 +35,7 @@ description: >
             </ul>
         </p>
         <p>
-            <b>Dans un second temps, trois autres pièces, conservées au Palais des Beaux-arts de Lille, ont fait l’objet d’une modélisation au printemps 2020 :</b>
+            <b>Dans un second temps, trois autres pièces, conservées au <a href="https://pba.lille.fr/">Palais des Beaux-arts de Lille</a>, ont fait l’objet d’une modélisation au printemps 2020 :</b>
             <ul>
                 <li><a href="items/croix-reliquaire.html">la Croix-reliquaire de Wasnes-au-Bac</a> (v.1220-1230)</li>
                 <li><a href="https://ecorpus.holusion.com/ui/scenes/plaque/view?lang=FR">la Plaque de Gédeon</a> (v. 1160)</li>
@@ -45,7 +45,9 @@ description: >
     </div>
 </section>
 
-<section class="section section-center">
+<section class="section left">
+    <h2>Numerisation</h2>
+    <img style="object-position: 70% 0;" src="/assets/img/photogrammetry.jpg" alt="Prise de photogramétrie d'un biface Acheuléen par l'Inrap">
     <div class="content">
         <p>
             Les modèles numériques issus de la photogrammétrie comportent les informations liées à la géométrie de l’objet sous la forme d’un mesh maillé 
@@ -58,15 +60,15 @@ description: >
     </div>
 </section>
 
-<section class="section section-center">
+<section class="section left section-white">
     <h2>Visionner et éditer en 3D</h2>
 </section>
 
 <section class="section">
-    <div class="media">
+    <div class="media mb-0">
         {% include voyager.html embed="croix-reliquaire" class="h-100" %}
     </div>
-    <div class="content">
+    <div class="content bg-white text-dark">
         <h4>Outils  d’édition  pour  les  chercheurs  et  les  
         conservateurs</h4>
         <p>
@@ -86,29 +88,21 @@ description: >
     </div>
 </section>
 
-<section class="section section-white">
-    <h2>eCorpus</h2> 
-</section>
-
 <section class="section section-center">
+    <h2>eCorpus</h2>
     <div class="content m-0">
-        <div class="section-center--header d-flex">
-            <img class="my-auto" style="object-position: 70% 0;" src="/assets/img/croix-clairmarais.png" alt="">
-            <div class="my-auto px-3">
-                <p>
-                    eCorpus incorpore des outils pour <b>la valorisation d’un catalogue 3D</b>, des outils d’analyse et de recherche collaborative ainsi que des options d’export pour la valorisation dans un cadre de médiation muséale ou pédagogique.
-                </p>
-                <p>
-                    Son premier rôle est de permettre de lier directement les données à l’objet et à sa géométrie par le biais d’annotations enrichies. 
-                    Elles lient ensemble un titre, un abstract et un article pouvant comporter des contenus multimédias (vidéos, images, liens…) en texte enrichi (HTML).
-                </p>                
-            </div>
-        </div>
+        <p>
+            eCorpus incorpore des outils pour <b>la valorisation d’un catalogue 3D</b>, des outils d’analyse et de recherche collaborative ainsi que des options d’export pour la valorisation dans un cadre de médiation muséale ou pédagogique.
+        </p>
+        <p>
+            Son premier rôle est de permettre de lier directement les données à l’objet et à sa géométrie par le biais d’annotations enrichies. 
+            Elles lient ensemble un titre, un abstract et un article pouvant comporter des contenus multimédias (vidéos, images, liens…) en texte enrichi (HTML).
+        </p>
     </div>
 </section>
 
 <section class="section section-white">
-    <img class="my-auto" style="object-position: 70% 0;" src="/assets/img/voyager-scene-tree.jpg" alt="">
+    <img class="my-auto" style="object-position: 70% 0;" src="/assets/img/voyager-scene-tree.jpg" alt="Node tree contenant les meta data d'un document sur DPO-Voyager">
     <div class="content">
         <p>
             Chaque entrée dans la base a une structure de données organisées dans <a href="https://smithsonian.github.io/dpo-voyager/document/overview/">un ﬁchier JSON de référence</a>, avec des ﬁchiers liés (objet 3d, textures, articles, images, vidéos, etc…)
@@ -150,12 +144,11 @@ description: >
         {% include voyager.html embed="encensoir" class="h-100" %}
     </div>
     <div class="content">
-       
         <p>
             eCorpus permet une diﬀusion des objets 3D et des métadonnées dans deux conﬁgurations diﬀérentes.
         </p>
         <p>
-            D’une part, l'intégration du visualisateur Voyager dans une page web ou une application permet d’aller directement requérir la dernière version de l'objet 3D auprès du serveur en fonction de ses droits de diﬀusion.
+            D’une part, <b>l'intégration du visualisateur Voyager dans une page web ou une application</b> permet d’aller directement requérir la dernière version de l'objet 3D auprès du serveur en fonction de ses droits de diﬀusion.
         </p>
         <p>
             C’est la méthode la plus simple pour la présentation des résultats sur des sites institutionnels, par email ou via des applications mobiles.
@@ -174,13 +167,14 @@ description: >
     </div>
 </section>
 
-<section class="section section-center">
-    <div class="content">
+<section class="section">
+    <img style="object-position: 70% 0;" src="/assets/img/sketch_ethesaurus.png" alt="Sketch représentant le démonstrateur eThesaurus de Holusion sur une borne holographique">
+    <div class="content m-auto">
         <p>
-            Parmi les diﬀérents formats d’export pour la médiation, eCorpus supporte la visualisation sur table tactile, tablettes mobiles, hologrammes et dispositifs de réalité virtuelle et réalité augmentée.
+            Parmi les diﬀérents formats d’export pour la médiation, eCorpus supporte <b>la visualisation sur table tactile, tablettes mobiles, hologrammes et dispositifs de réalité virtuelle et réalité augmentée</b>.
         </p>
         <p>
-            Le démonstrateur eThesaurus, fabriqué par Holusion, permet la visualisation d’un export d’une base de données eCorpus.
+            Le démonstrateur eThesaurus, fabriqué par <a href="https://holusion.com/">Holusion</a>, permet la visualisation d’un export d’une base de données eCorpus.
         </p>
         <p>
             L’aﬃchage est séparé sur deux écrans. L’écran transparent est dedié à la visualisation des objets 3D, des animations et des annotations concises.
