@@ -1,12 +1,22 @@
 ---
-layout: page
+layout: default
 ---
 
-<main class="pt-5 main-grid">
-    <section class="section section-center">
-        <div class="content">
-            {{ content }}
-        </div>
-    </section>
-    
-</main>
+<div class="sidebar-layout pt-5">
+    <nav style="position: absolute; width: 250px;">
+        Guides techniques
+        <ul>
+            <li>Guide d'adminitration</li>
+            <li>Gestion des modèles</li>
+            <li>Déploiement</li>
+        </ul>
+        Tutoriels
+        <ul>
+            <li>Créer une scène pas à pas</li>
+            <li>Créer une visite guidée</li>
+        </ul>
+    </nav>
+    <main class="main-grid" style="margin-left: 250px;">
+        {{ content }}
+    </main>
+</div>
