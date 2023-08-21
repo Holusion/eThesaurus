@@ -2,8 +2,8 @@ collection:
   fr: Collection
   en: Collection
 doc/:
-  fr: Guides
-  en: Guides
+  fr: Documentation
+  en: Documentation
 about:
   fr: À propos
   en: About

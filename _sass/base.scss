@@ -133,3 +133,20 @@ h1, h2, h3 {
     }    
   }
 }
+
+.sidebar-layout{
+  margin-top: 100px;
+  nav{
+    position: sticky;
+    margin-top: 2rem;
+    h2{
+      font-size: 1.5rem;
+      color: white;
+    }
+    ul{
+      li{
+        list-style: none;
+      }
+    }
+  }
+}

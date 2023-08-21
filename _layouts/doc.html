@@ -2,20 +2,27 @@
 layout: default
 ---
 
-<div class="sidebar-layout pt-5">
-    <nav style="position: absolute; width: 250px;">
-        Guides techniques
-        <ul>
-            <li>Guide d'adminitration</li>
-            <li>Gestion des modèles</li>
-            <li>Déploiement</li>
-        </ul>
-        Tutoriels
-        <ul>
-            <li>Créer une scène pas à pas</li>
-            <li>Créer une visite guidée</li>
-        </ul>
-    </nav>
+<div class="sidebar-layout">
+    <div style="position: absolute; width: 250px;">
+        <nav>
+            <h2>{{ site.data.doc.guide[page.lang] }}</h2>
+            <ul>
+                {% for item in site.pages %}
+                    {%if item.type == "doc" and item.category == "guide" and item.lang == page.lang %}
+                        <li><a href={{item.url}}>{{ item.title }}</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <h2>{{ site.data.doc.tutorial[page.lang] }}</h2>
+            <ul>
+                {% for item in site.pages %}
+                    {%if item.type == "doc" and item.category == "tutorial" and item.lang == page.lang %}
+                    <li><a href={{item.url}}>{{ item.title }}</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </nav>
+    </div>
     <main class="main-grid" style="margin-left: 250px;">
         {{ content }}
     </main>

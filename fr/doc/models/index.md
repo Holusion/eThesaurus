@@ -1,5 +1,6 @@
 ---
 title: Gestion des modèles
+category: guide
 ---
 
 ## Principes de base 
