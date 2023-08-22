@@ -135,17 +135,23 @@ h1, h2, h3 {
 }
 
 .sidebar-layout{
-  margin-top: 100px;
   nav{
+    margin-top: 50px;
     position: sticky;
-    margin-top: 2rem;
+    padding: .5rem;
     h2{
       font-size: 1.5rem;
       color: white;
     }
     ul{
       li{
-        list-style: none;
+        list-style: square;
+        a{
+          text-decoration: none;
+          &:hover{
+            color: var(--color-light);
+          }
+        }
       }
     }
   }
