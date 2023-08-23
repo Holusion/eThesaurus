@@ -1,6 +1,7 @@
 ---
 title:  eCorpus Administration Manual
 description: Take a tour of eCorpus administration features.
+category: guide
 ---
 
 # Administration of an eCorpus instance
