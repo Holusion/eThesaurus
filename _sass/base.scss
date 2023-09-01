@@ -2,6 +2,7 @@ $backgroundColor: #103040;
 $bodyColor: #ffffff;
 $bodyFont: 'Open Sans',Roboto,sans-serif;
 $serifFont: 'Noto Serif', serif;
+$sidebar_width: 250px;
 
 body {
   background: $backgroundColor;
@@ -134,6 +135,8 @@ h1, h2, h3 {
   }
 }
 
+
+
 .sidebar-layout{
   nav{
     margin-top: 50px;
@@ -144,15 +147,56 @@ h1, h2, h3 {
       color: white;
     }
     ul{
-      li{
+      li.content-bar--link{
         list-style: square;
+        background: none;
         a{
           text-decoration: none;
+          color: var(--bs-white);
           &:hover{
-            color: var(--color-light);
+            color: var(--bs-info);
           }
         }
       }
+      /*only for first level */
+      &.content-bar-group--main>li.content-bar--link>a{
+        font-family: $serifFont;
+        &.current{
+          color: var(--bs-white);
+        }
+      }
+      /* only for other levels */
+      &:not(.content-bar-group--main) li.content-bar--link.current a{
+        color: var(--bs-orange);
+      }
+    }
+  }
+}
+
+@media (min-width: 992px){
+  .sidebar-layout{
+    nav{
+      position: absolute;
+      top: 0px;
+      bottom: 0;
+      width: $sidebar_width;
+      padding: 1rem;
+      .navbar-collapse{
+        position: sticky;
+        top: 60px;
+        width:100%;
+        max-height: 100%;
+        overflow-y: scroll;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+          display: none;
+          }
+      }
+    }
+
+    main.content{  
+      margin-left: $sidebar_width;
+      border-left: 1px solid var(--bs-dark);
     }
   }
 }

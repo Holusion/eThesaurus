@@ -1,9 +1,8 @@
 ---
-title:  Déployer une instance eCorpus
-category: guide
+title: Hardware requirements
 ---
 
-# Deploying an eCorpus instance
+# eCorpus requirements
 
 ## Requirements
 

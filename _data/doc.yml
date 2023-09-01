@@ -1,6 +1,12 @@
-guide:
+introduction:
+  fr: Introduction
+  en: Introduction
+guides:
   fr: Guides techniques
   en: Technical guides
-tutorial:
+tutorials:
   fr: Tutoriels
   en: Tutorials
+references:
+  fr: Références
+  en: References

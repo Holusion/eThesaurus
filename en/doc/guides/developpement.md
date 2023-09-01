@@ -1,23 +1,7 @@
----
-title:  Développement
-category: guide
----
 
 ### Keeping in sync
 
 This repository is kept in sync with [upstream](https://github.com/Smithsonian/dpo-voyager).
-
-To keep things clean it could be worth using a **merging-rebase** strategy[^1].
-
- > see [Doc](https://git-scm.com/docs/git-rebase#_rebasing_merges) with something like this :
-```
-git merge -s ours -m "Start the merging-rebase to $(git rev-parse --short master)" master
-git rebase --rebase-merges --interactive origin/main
-git push
-```
-The details are quite fuzzy, please ensure you _KNOW_ what you're doing.
-
-Otherwise a simple merge could do : 
 
 ```
 git merge -m "merge branch 'master' on $(git rev-parse --short master)" master
