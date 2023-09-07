@@ -1,12 +1,17 @@
 ---
-layout: page
+layout: default
 ---
 
-<main class="pt-5 main-grid">
-    <section class="section section-center">
-        <div class="content">
-            {{ content }}
+<div class="sidebar-layout main-dark">
+    <nav class="content-bar bg-faded navbar-dark navbar-expand-lg">
+        <button class="navbar-toggler dropdown-toggle my-3" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-controls="sidebar" aria-expanded="true" aria-label="Toggle navigation">
+            <span>Navigation</span>
+        </button>
+        <div class="navbar-collapse flex-column align-items-stretch collapse show" id="sidebar" aria-expanded="false">
+            {% docnav %}
         </div>
-    </section>
-    
-</main>
+    </nav>
+    <main class="content main-grid">
+        {{ content }}
+    </main>
+</div>

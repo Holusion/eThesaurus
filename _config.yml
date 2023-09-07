@@ -22,19 +22,13 @@ defaults:
       lang: "en"
   
   - scope:
-      path: "fr/items"
-    values:
-      layout: "item"
-  - scope:
-      path: "en/items"
+      path: "*/items"
     values:
       layout: "item"
 
   - scope:
-      path: "fr/doc"
+      path: "*/doc"
     values:
       layout: "doc"
-  - scope:
-      path: "en/doc"
-    values:
-      layout: "doc"
+      type: doc
+  

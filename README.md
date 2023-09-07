@@ -35,3 +35,11 @@ Exemple:
       \- about.html # title: "About"
 
 Toutes les pages présentes dans le dossier `items` sont automatiquement ajoutées à la **collection** : la liste des objets présentés sur le site.
+
+Pour que les pages de doc soient référencées dans le menu de navigation, ajouter sa catégorie ("tutorial" ou "guide") et son titre dans le header de la page.
+
+Exemple :
+    ---
+    title: Créer une visite guidée
+    category: tutorial
+    ---

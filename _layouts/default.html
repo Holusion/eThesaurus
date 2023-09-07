@@ -58,7 +58,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="navbar-header me-3 p-2">
-          <a href="/{{page.lang}}/" class="navbar-brand" aria-label="ecorpus logo">
+          <a href="/{{page.lang | default: "fr" }}/" class="navbar-brand" aria-label="ecorpus logo">
             <img src="/assets/img/logo-ecorpus.png" alt="logo e-corpus" height="32">
             <span style="font-family: Noto Serif, serif;" class="px-2 text-light">eThesaurus</span> 
           </a>
@@ -66,9 +66,8 @@
         <div class="collapse navbar-collapse" id="navbar-collapse-1">
           <ul class="nav navbar-nav ms-auto" role="menu">
             {%- for item in site.data.nav -%}
-            
               <li class="nav-item">
-                <a class="nav-link" href="/{{ page.lang }}/{{ item[0] }}">{{ item[1][page.lang] }}</a>
+                <a class="nav-link" href="/{{ page.lang | default: "fr" }}/{{ item[0] }}">{{ item[1][page.lang] }}</a>
               </li>
             {%- endfor -%}
             {% include language_picker.html type="nav-item dropdown" classes="nav-link" %}
