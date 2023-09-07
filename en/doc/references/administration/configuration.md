@@ -82,7 +82,7 @@ Set to `false` to disable periodic database cleanup.
 
 > `.`
 
-Main directory. Serves as a base for [FILES_DIR](#FILES_DIR) [DIST_DIR](#DIST_DIR) and [ASSETS_DIR](#ASSETS_DIR).
+Main directory. Serves as a base for [FILES_DIR](#files_dir) [DIST_DIR](#dist_dir) and [ASSETS_DIR](#assets_dir).
 
 ### MIGRATIONS_DIR
 

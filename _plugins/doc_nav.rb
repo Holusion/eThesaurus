@@ -72,7 +72,7 @@ module Jekyll
           end
 
           markup += %(
-            <a class="dropdown-toggle" role="button"
+            <a class="dropdown-toggle" role="button" data-proofer-ignore
               data-bs-toggle="collapse"  aria-haspopup="true"
               aria-expanded="#{is_active ? "true" : "false"}"
               data-bs-target="#collapseList#{uid}"

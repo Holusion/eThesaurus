@@ -85,7 +85,7 @@ Mettre à `false` pour désactiver le nettoyage périodique de base de données.
 
 > `.`
 
-Répertoire principal. Sert de base pour [FILES_DIR](#FILES_DIR) [DIST_DIR](#DIST_DIR) et [ASSETS_DIR](#ASSETS_DIR).
+Répertoire principal. Sert de base pour [FILES_DIR](#files_dir) [DIST_DIR](#dist_dir) et [ASSETS_DIR](#assets_dir).
 
 ### MIGRATIONS_DIR
 
