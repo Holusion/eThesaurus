@@ -7,15 +7,17 @@ description: >
 ---
 
 <section class="section section-center">
-    <h2 class="text-white my-5" style="font-size: 3rem">eThesaurus</h2>
+    <h2 class="text-white my-5" style="font-size: 3rem">eCorpus</h2>
 </section>
 
 <section class="section left">
     <img class="cover img-fluid" style="object-position: 70% 0;" src="/assets/img/focus_stbertin_matthieu.webp" alt="Gros plan sur le pied de croix de l'abbaye de Saint-Bertin. l'évangéliste Matthieu devant son pupitre, tourné vers son symbole (l'ange). Réalisé en image de synthèse à partir d'une photogrammétrie">
     <div class="content">
-        <h2>L’orfèvrerie médiévale à l’épreuve de la modélisation numérique</h2>
+        <h2>Outils  d’édition  pour  les  chercheurs  et  les  
+            conservateurs</h2>
         <p>
-            eThesaurus est un projet d’histoire de l’art et des techniques, porté par une équipe d’universitaires français et belges, de conservateurs de musées et la société Holusion, spécialiste de l’affichage digital innovant.    
+            eCorpus est une base de données liées au modèles 3D, utilisant <a href="https://smithsonian.github.io/dpo-voyager/">DPO-voyager</a> comme visualiseur 3D et éditeur de métadonnées, 
+            un gestionnaire d’historique de modifications, un gestionnaire de droits utilisateurs et des outils de gestion de l’application pour l’installer sur un serveur local.
         </p>
     </div>
 </section>
@@ -23,6 +25,9 @@ description: >
 <section class="section section-white left">
     <div class="content">
         <h2>Diffuser les résultats des modélisations eThesaurus</h2>
+        <p>
+            Le développement d'eCorpus a été initié dans le cadre du consortium <a href="/fr/about">eThesaurus</a>
+        </p>
         <p>
             Le projet porte sur la numérisation de six œuvres d'orfèvrerie médiévale, conservées au musée Sandelin à Saint-Omer et au Palais des Beaux-arts de Lille
         </p>
@@ -32,7 +37,6 @@ description: >
         <p align="right">
             <a href="collection">Voir la liste des objets</a>
         </p>
-        
     </div>
 </section>
 
@@ -59,12 +63,14 @@ description: >
     <div class="media mb-0">
         {% include voyager.html embed="croix-reliquaire" class="h-100" %}
     </div>
-    <div class="content bg-white text-dark">
-        <h4>Outils  d’édition  pour  les  chercheurs  et  les  
-        conservateurs</h4>
+    <div class="content">
+        <h4>Complet</h4>
         <p>
-            eCorpus est une base de données liées au modèles 3D, utilisant <a href="https://smithsonian.github.io/dpo-voyager/">DPO-voyager</a> comme visualiseur 3D et éditeur de métadonnées, 
-            un gestionnaire d’historique de modifications, un gestionnaire de droits utilisateurs et des outils de gestion de l’application pour l’installer sur un serveur local.
+            eCorpus incorpore des outils pour <b>la valorisation d’un catalogue 3D</b>, des outils d’analyse et de recherche collaborative ainsi que des options d’export pour la valorisation dans un cadre de médiation muséale ou pédagogique.
+        </p>
+        <p>
+            Son premier rôle est de permettre de lier directement les données à l’objet et à sa géométrie par le biais d’annotations enrichies. 
+            Elles lient ensemble un titre, un abstract et un article pouvant comporter des contenus multimédias (vidéos, images, liens…) en texte enrichi (HTML).
         </p>
         <h4>Open source</h4>
         <p>Les résultats du développement sont diﬀusés dans un format Open Source, pour que l’utilisateur soit pleinement propriétaire de ses données et de son environnement.</p>
@@ -76,19 +82,6 @@ description: >
         <p> La majeure partie des cas d’usages concernent des entités qui possèdent déjà une solution de gestion de contenu, tel que OMEKA S. Les données de eCorpus sont intégrables au sein de celle-ci et recherchables.</p>
         <h4>Documentée et dotée d’un environnement de développement collaboratif</h4>
         <p>Le dynamisme d’un projet Open Source est capital dans la réussite d’un projet et sa diﬀusion. La présence de sa documentation sur une plateforme comme <a href="https://github.com/Holusion/eThesaurus">GitHub</a> et l’activité régulière du développement avec une équipe clairement identiﬁée.</p>
-    </div>
-</section>
-
-<section class="section section-center">
-    <h2>eCorpus</h2>
-    <div class="content m-0">
-        <p>
-            eCorpus incorpore des outils pour <b>la valorisation d’un catalogue 3D</b>, des outils d’analyse et de recherche collaborative ainsi que des options d’export pour la valorisation dans un cadre de médiation muséale ou pédagogique.
-        </p>
-        <p>
-            Son premier rôle est de permettre de lier directement les données à l’objet et à sa géométrie par le biais d’annotations enrichies. 
-            Elles lient ensemble un titre, un abstract et un article pouvant comporter des contenus multimédias (vidéos, images, liens…) en texte enrichi (HTML).
-        </p>
     </div>
 </section>
 
