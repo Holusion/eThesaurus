@@ -2,13 +2,11 @@
 title:  Développement
 ---
 
-## Synchronisation avec le dépôt d'origine
+## Mise en route
 
-Ce dépôt est synchronisé avec [upstream](https://github.com/Smithsonian/dpo-voyager). Les modifications sont apportées dans une branche `master` et sont fusionnées avec la branche `upstream/master`. Il est important de garder le portage de code le plus simple possible[^1].
+Voir le [guide d'installation rapide](/fr/doc/tutorials/deployment).
 
-```
-git merge -m "merge branch 'master' on $(git rev-parse --short master)" master
-```
+Utiliser la commande : `npm run watch` pour activer la recompilation automatique.
 
 ## Sous-modules
 
@@ -41,5 +39,17 @@ Enfin, dans le dossier racine :
         git add libs/ff-x
 
 Validez les modifications de l'URL et de HEAD du sous-module.
+
+
+
+## Synchronisation avec le dépôt d'origine
+
+Ce dépôt est synchronisé avec [upstream](https://github.com/Smithsonian/dpo-voyager). Les modifications sont apportées dans une branche `master` et sont fusionnées avec la branche `upstream/master`. Il est important de garder le portage de code le plus simple possible[^1].
+
+```
+git merge -m "merge branch 'master' on $(git rev-parse --short master)" master
+```
+
+
 
 [^1]: Voir par exemple : [friendly forks management](https://github.blog/2022-05-02-friend-zone-strategies-friendly-fork-management/#git-for-windows-git)

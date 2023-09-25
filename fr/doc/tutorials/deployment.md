@@ -13,18 +13,33 @@ Exemple de création d'une instance minimale à des fins de tests:
     git clone --filter=blob:none git@github.com:Holusion/eCorpus
     cd eCorpus
     npm i
+    (cd source/server && npm i)
+    (cd source/ui && npm i)
+    npm run build-ui
     npm run build-server
     npm start
 
  > Voir aussi: installation via docker
 
-Dans un navigateur, chargez [localhost:3000](http://localhost:3000).
+Dans un navigateur, chargez [localhost:8000](http://localhost:8000).
 
 
 ### Création du premier compte utilisateur
 
-L'application se lance initialement en "mode ouvert", vous permettant la création c'un premier compte utilisateur en ligne de commande :
+L'application se lance initialement en "mode ouvert", vous permettant la création d'un premier compte utilisateur en ligne de commande.
 
-    curl -XPOST -H "Content-Type: application/json" -d '{"username":"<...>", "password":"<...>", "email":"<...>", "isAdministrator": true}' "http://localhost:3000/api/v1/users"
+Après avoir démarré votre serveur local, ouvrez un autre terminal et exécutez la commande suivante:
+
+    curl -XPOST -H "Content-Type: application/json" -d '{"username":"<...>", "password":"<...>", "email":"<...>", "isAdministrator": true}' "http://localhost:8000/api/v1/users"
 
 Par la suite, d'autres comptes pourront être créés via l'interface web.
+
+### Aller plus loin
+
+Rendez-vous à l'adresse [localhost:8000](http://localhost:8000) et connectez-vous à l'aide de votre nouveau compte.
+
+Vous pouvez maintenant [créer votre première scène](/fr/doc/tutorials/voyager/import).
+
+Si vous souhaitez éditer le code source, réferez-vous au [guide de développement](/fr/doc/guides/development).
+
+Pour configurer votre nouvelle instance, consultez la [documentation de configuration](/fr/doc/references/administration/configuration).
