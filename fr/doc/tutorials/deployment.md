@@ -10,7 +10,7 @@ title:  Installation rapide
 
 Exemple de création d'une instance minimale à des fins de tests:
 
-    git clone --filter=blob:none git@github.com:Holusion/eCorpus
+    git clone --filter=blob:none --recurse-submodules git@github.com:Holusion/eCorpus
     cd eCorpus
     npm i
     (cd source/server && npm i)

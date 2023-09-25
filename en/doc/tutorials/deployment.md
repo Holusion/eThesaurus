@@ -12,7 +12,7 @@ This section provides an example of creating a minimal instance of eCorpus for t
 
 1. Clone the eCorpus repository using the following command:
     ```
-    git clone --filter=blob:none git@github.com:Holusion/eCorpus
+    git clone --filter=blob:none --recurse-submodules git@github.com:Holusion/eCorpus
     ```
 2. Navigate to the eCorpus directory:
     ```

@@ -16,6 +16,12 @@ Surtout après une synchronisation avec le dépôt d'origine, il est nécessaire
 git submodule update --recursive
 ```
 
+Ou si le clone a été mal fait (sans `--recurse-submodules`):
+
+```
+git submodule update --init --recursive
+```
+
 Pour supprimer les éventuelles modifications locales apportées aux sous-modules, utilisez :
 
 ```
@@ -40,7 +46,23 @@ Enfin, dans le dossier racine :
 
 Validez les modifications de l'URL et de HEAD du sous-module.
 
+## Tests
 
+La partie serveur du code est testée avec [mocha](https://mochajs.org/) et [chai](https://www.chaijs.com/). Voir `source/server/**/*.test.js`.
+
+Lancer les tests unitaires avec :
+
+```
+npm test
+```
+
+Ou pour sélectionner des tests spécifiques :
+
+```
+(cd source/server && npm test -- --grep "test name")
+```
+
+ > Certaines lignes de `console.log` sont désactivées pour rendre la sortie standard des tests plus lisible. Il est possible de les réactivant en forçant la variable `TEST=0` en ligne de commande.
 
 ## Synchronisation avec le dépôt d'origine
 
