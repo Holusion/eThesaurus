@@ -17,7 +17,7 @@ Pour tester et construire ce site localement, il faut disposer d'une installatio
 
     gem install bundler
     bundle
-    bundle exec jekyll serve
+    bundle exec jekyll serve --incremental
 
 Puis explorez votre copie locale du site sur `http://localhost:4000`.
 

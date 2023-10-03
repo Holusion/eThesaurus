@@ -16,7 +16,14 @@ footer {
 }
 
 main {
-  min-height: calc(100% - 45px);
+  min-height: calc(100vh - 3rem);
+  padding: 4rem 1rem 1rem 1rem;
+  > section, > .section{
+    margin: 0 -1rem 0 -1rem;
+    &:first-child{
+      margin-top: -1rem;
+    }
+  }
 }
 
 h1, h2, h3 {
@@ -175,7 +182,7 @@ h1, h2, h3 {
 
 @media (min-width: 992px){
   .sidebar-layout{
-    nav{
+    & > &__nav {
       position: absolute;
       top: 0px;
       bottom: 0;
@@ -194,7 +201,7 @@ h1, h2, h3 {
       }
     }
 
-    main.content{  
+    & > &__content {  
       margin-left: $sidebar_width;
       border-left: 1px solid var(--bs-dark);
     }
