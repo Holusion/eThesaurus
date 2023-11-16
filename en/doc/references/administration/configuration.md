@@ -49,10 +49,19 @@ Port used by the service. Change in case of conflict.
 
 ### SMART_HOST
 
- > `localhost`
+ > `smtp://localhost`
 
-[Smart Host](https://en.wikipedia.org/wiki/Smart_host) to use for sending emails.
+[Smart Host](https://en.wikipedia.org/wiki/Smart_host) à utiliser pour l'envoi d'emails.
 
+Used by [modemailer](https://nodemailer.com/) to create a mail transport.
+
+Additional configuration options can be added to the url as query parameters.
+
+```
+# allow self-signed certificates:
+smtp://localhost:465?tls.rejectUnauthorized=false
+```
+See the full [list](https://nodemailer.com/smtp/).
 
 
 ### TRUST_PROXY
