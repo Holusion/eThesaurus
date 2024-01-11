@@ -1,7 +1,6 @@
 ---
-title: Configurer une instance
+title: Configure an instance
 ---
-//translate in english the text from fr/doc/references/administration/configuration.md
 
 # Settings and parameters
 
