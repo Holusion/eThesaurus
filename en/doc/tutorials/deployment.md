@@ -21,6 +21,7 @@ This section provides an example of creating a minimal instance of eCorpus for t
 3. Install the required dependencies:
     ```
     npm i
+    (cd source/voyager && npm i --legacy-peer-deps)
     (cd source/server && npm i)
     (cd source/ui && npm i)
     ```
